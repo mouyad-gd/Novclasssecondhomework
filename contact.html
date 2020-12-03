@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Basic Portfolio</title>
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Xanh+Mono&display=swap" rel="stylesheet">
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <!-- added logo to the nav bar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <img src="assets/imgs/logo.png" width="50" height="50" class="toplogo" alt="logo" loading="lazy">
+    <a id="logo">Mouyad A. </a>
+    <!-- collapse drop menue -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- title for the Contact Me form -->
+    <div class="row">
+      <div class="col-md-3">
+        <h1 class="block-header">CONTACT ME:</h1>
+        <p class="shadow">let's talk, send me your message and let me know your thoughts</p>
+      </div>
+      <!-- title for the Visit my City I frame google map -->
+      <div class="col-md-6">
+        <h1 class="block-header">VISIT MY CITY:</h1>
+        <p class="shadow">Cleveland, officially the City of Cleveland, is a major city in the U.S. state of Ohio, and
+          the county seat of Cuyahoga County. It is located on the southern shore of Lake Erie, across the U.S. maritime
+          border with Canada and approximately 60 miles west of the Ohio-Pennsylvania state border.
+          </br><a href="https://en.wikipedia.org/wiki/Cleveland" target="_blank"> Click here to read</a> </p>
+      </div>
+
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+
+    <!-- Contact Me form -->
+    <section class="row">
+      <div class="col-md-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">First Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="text here">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Last Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="text here">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Type you message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </div>
+      <!-- I frame google map with Cleveland snapshot -->
+      </form>
+      <div class="col-md-3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23906.719892324018!2d-81.68841622660585!3d41.49690660544807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1606257459977!5m2!1sen!2sus"
+          width="600" height="450" frameborder="0" style="border:5;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </section>
+    <hr>
+    <!-- Titke for the Cleveland Images -->
+    <div class="row">
+      <div class="col-md-10">
+        <h1 class="block-header">Explore more Cleveland' images</h1>
+      </div>
+      <!-- Chat form title-->
+      <div class="col-md-2">
+        <h1 class="block-header">Let's Chat</h1>
+
+      </div>
+    </div>
+    <!-- Images from Cleveland -->
+    <div class="row">
+      <div class="col-sm-10">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Edgewater_Park_Sunrise_%2847637567572%29.jpg/1200px-Edgewater_Park_Sunrise_%2847637567572%29.jpg"
+                class="d-block w-100" alt="Cleveland view">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cleveland from the Lake</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://joeboylenaturephotography.com/virteom/uploaded_media/Modules/Categories/200908005P-1600px-1304377459.jpg"
+                class="d-block w-100" alt="Cleveland Lake-Eri view">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Cleveland Lake Erie</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://joeboylenaturephotography.com/virteom/uploaded_media/Modules/Categories/slideshow/201111037-1600px-1323488085.jpg"
+                class="d-block w-100" alt="Cleveland port image">
+              <div class="carousel-caption d-none d-md-block">
+                <p>Down town Cleveland</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+
+
+      <!-- Chat Form -->
+      <div class="col-sm-2">
+        <div class="row">
+          <div class="card text-white bg-dark mb-3" style="max-width: 17rem;">
+            <img src="./assets/imgs/livechat.png" class="card-img-top" alt="instant chat image">
+            <div class="card-body">
+              <label for="exampleFormControlTextarea">Chat Now</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+          <!--Flight Tickets search - Google cse search  -->
+        </div>
+        <div class="row">
+          <p class="enginesearch">Enter your city name and book your next flight to Cleveland
+          <p>
+            <script async src="https://cse.google.com/cse.js?cx=23efeb5193ca5c4ed"></script>
+          <div class="gcse-search"></div>
+        </div>
+      </div>
+
+
+
+
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
+  </footer>
+  <!-- Javascript cdn link and bootstrap link -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
